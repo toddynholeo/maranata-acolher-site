@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funerária Maranata - Serviços Funerários com Amor e Cuidado</title>
+    <meta name="description" content="Funerária Maranata oferece serviços funerários completos com acolhimento, estrutura e empatia. Cremação, traslado, velórios e assistência 24h.">
+    <meta name="keywords" content="funerária, serviços funerários, cremação, traslado, velório, emergencial 24h, São Paulo">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: #1a1a1a;
+            transition: color 0.3s;
+        }
+        
+        .nav a:hover {
+            color: #666;
+        }
+        
+        .header-buttons {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: #1a1a1a;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #333;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: #1a1a1a;
+            border: 1px solid #1a1a1a;
+        }
+        
+        .btn-outline:hover {
+            background: #1a1a1a;
+            color: white;
+        }
+        
+        .btn-white {
+            background: white;
+            color: #1a1a1a;
+        }
+        
+        .btn-white:hover {
+            background: #f5f5f5;
+        }
+        
+        .btn-white-outline {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+        
+        .btn-white-outline:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)),
+                        url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&h=1080&fit=crop') center/cover;
+        }
+        
+        .hero-content {
+            text-align: center;
+            color: white;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 300;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+        
+        .hero .highlight {
+            font-weight: 500;
+        }
+        
+        .hero p {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 64px;
+            flex-wrap: wrap;
+        }
+        
+        .hero-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 64px;
+        }
+        
+        .hero-feature {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 24px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .icon {
+            width: 32px;
+            height: 32px;
+            margin: 0 auto 16px;
+            fill: currentColor;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-gray {
+            background: #f5f5f5;
+        }
+        
+        .section-dark {
+            background: #1a1a1a;
+            color: white;
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        
+        .section-subtitle {
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            text-align: center;
+            opacity: 0.8;
+            margin-bottom: 64px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .highlight {
+            font-weight: 500;
+        }
+        
+        /* Grid Layouts */
+        .grid {
+            display: grid;
+            gap: 32px;
+        }
+        
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        }
+        
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        .grid-4 {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        
+        .card p {
+            opacity: 0.8;
+            margin-bottom: 16px;
+        }
+        
+        .card ul {
+            list-style: none;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        .card ul li {
+            margin-bottom: 4px;
+        }
+        
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+        
+        .about-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            margin: 32px 0;
+        }
+        
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            opacity: 0.8;
+        }
+        
+        .feature-dot {
+            width: 8px;
+            height: 8px;
+            background: #1a1a1a;
+            border-radius: 50%;
+        }
+        
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 24px;
+            text-align: center;
+        }
+        
+        .stat {
+            background: rgba(255,255,255,0.1);
+            padding: 24px;
+            border-radius: 12px;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .contact-card.primary {
+            background: #1a1a1a;
+            color: white;
+        }
+        
+        .emergency-card {
+            background: #1a1a1a;
+            color: white;
+            padding: 32px;
+            border-radius: 12px;
+            margin-top: 32px;
+        }
+        
+        .form {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 24px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #1a1a1a;
+        }
+        
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 64px 0 32px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+        
+        .footer h4 {
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+        
+        .footer ul {
+            list-style: none;
+        }
+        
+        .footer ul li {
+            margin-bottom: 12px;
+            opacity: 0.8;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+            }
+            
+            .header-buttons .btn-outline {
+                display: none;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Utilities */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-32 {
+            margin-bottom: 32px;
+        }
+        
+        .mb-64 {
+            margin-bottom: 64px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Funerária Maranata</div>
+                
+                <nav class="nav">
+                    <a href="#inicio">Início</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="#estrutura">Estrutura</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                
+                <div class="header-buttons">
+                    <a href="#" class="btn btn-outline">Trabalhe Conosco</a>
+                    <a href="tel:1199999999" class="btn btn-primary">
+                        📞 Atendimento 24H
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>
+                    Cuidamos com <span class="highlight">amor</span><br>
+                    das suas memórias
+                </h1>
+                
+                <p>
+                    Em momentos difíceis, oferecemos acolhimento, estrutura e empatia. 
+                    Nossa equipe especializada está preparada para cuidar de cada detalhe 
+                    com o carinho que sua família merece.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-white">Falar com Consultor</a>
+                    <a href="#servicos" class="btn btn-white-outline">Nossos Serviços</a>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <div>
+                            <div style="font-weight: 500; margin-bottom: 4px;">Acolhimento 24h</div>
+                            <div style="font-size: 0.9rem; opacity: 0.8;">Sempre ao seu lado</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-feature">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.5 16,12.1 16,12.7V16.2C16,16.8 15.4,17.3 14.8,17.3H9.2C8.6,17.3 8,16.8 8,16.2V12.7C8,12.1 8.6,11.5 9.2,11.5V10C9.2,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.5,8.9 10.5,9.7V11.5H13.5V9.7C13.5,8.9 12.8,8.2 12,8.2Z"/>
+                        </svg>
+                        <div>
+                            <div style="font-weight: 500; margin-bottom: 4px;">Estrutura Completa</div>
+                            <div style="font-size: 0.9rem; opacity: 0.8;">Tudo que você precisa</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-feature">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                        </svg>
+                        <div>
+                            <div style="font-weight: 500; margin-bottom: 4px;">Emergencial</div>
+                            <div style="font-size: 0.9rem; opacity: 0.8;">Atendimento imediato</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="section section-gray">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <h2 class="section-title">
+                        Tradição, Cuidado e <br>
+                        <span class="highlight">Amor ao Próximo</span>
+                    </h2>
+                    
+                    <p style="font-size: 1.1rem; margin-bottom: 32px; opacity: 0.8;">
+                        Com anos de experiência no cuidado e acolhimento de famílias em momentos delicados, 
+                        a Funerária Maranata se dedica a oferecer serviços funerários com excelência, 
+                        respeito e dignidade.
+                    </p>
+                    
+                    <ul class="feature-list">
+                        <li>
+                            <div class="feature-dot"></div>
+                            Ambientes climatizados e confortáveis
+                        </li>
+                        <li>
+                            <div class="feature-dot"></div>
+                            Salas reservadas para famílias
+                        </li>
+                        <li>
+                            <div class="feature-dot"></div>
+                            Capela ecumênica para cerimônias
+                        </li>
+                        <li>
+                            <div class="feature-dot"></div>
+                            Estrutura completa de apoio
+                        </li>
+                    </ul>
+                    
+                    <a href="#contato" class="btn btn-primary">Conhecer nossa estrutura</a>
+                </div>
+                
+                <div>
+                    <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800&h=600&fit=crop" 
+                         alt="Ambiente sereno e tranquilo" class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="section">
+        <div class="container">
+            <div class="text-center mb-64">
+                <h2 class="section-title">
+                    Assistência completa para você e sua família
+                </h2>
+                <p class="section-subtitle">
+                    Oferecemos todos os serviços funerários necessários com agilidade, 
+                    transparência e humanidade em momentos difíceis.
+                </p>
+            </div>
+            
+            <div class="grid grid-4 mb-64">
+                <div class="card text-center">
+                    <svg class="icon" style="margin: 0 auto 16px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V4A2,2 0 0,0 18,2M18,20H6V4H18V20Z"/>
+                    </svg>
+                    <h3>Cerimônias e Velórios</h3>
+                    <p>Organização completa de cerimônias religiosas e velórios com todo cuidado necessário.</p>
+                    <ul>
+                        <li>• Estrutura completa</li>
+                        <li>• Ornamentação</li>
+                        <li>• Som ambiente</li>
+                        <li>• Apoio logístico</li>
+                    </ul>
+                </div>
+                
+                <div class="card text-center">
+                    <svg class="icon" style="margin: 0 auto 16px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                    </svg>
+                    <h3>Cremação</h3>
+                    <p>Serviços de cremação com acompanhamento integral e todo suporte à família.</p>
+                    <ul>
+                        <li>• Processo completo</li>
+                        <li>• Documentação</li>
+                        <li>• Acompanhamento</li>
+                        <li>• Entrega das cinzas</li>
+                    </ul>
+                </div>
+                
+                <div class="card text-center">
+                    <svg class="icon" style="margin: 0 auto 16px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M5,11L6.5,6.5H17.5L19,11M17.5,16A1.5,1.5 0 0,1 16,14.5A1.5,1.5 0 0,1 17.5,13A1.5,1.5 0 0,1 19,14.5A1.5,1.5 0 0,1 17.5,16M6.5,16A1.5,1.5 0 0,1 5,14.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 8,14.5A1.5,1.5 0 0,1 6.5,16M18.92,6C18.72,5.42 18.16,5 17.5,5H6.5C5.84,5 5.28,5.42 5.08,6L3,12V20A1,1 0 0,0 4,21H5A1,1 0 0,0 6,20V19H18V20A1,1 0 0,0 19,21H20A1,1 0 0,0 21,20V12L18.92,6Z"/>
+                    </svg>
+                    <h3>Traslado</h3>
+                    <p>Traslado nacional e internacional com segurança e dignidade.</p>
+                    <ul>
+                        <li>• Traslado nacional</li>
+                        <li>• Traslado internacional</li>
+                        <li>• Veículos especializados</li>
+                        <li>• Equipe treinada</li>
+                    </ul>
+                </div>
+                
+                <div class="card text-center">
+                    <svg class="icon" style="margin: 0 auto 16px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                    </svg>
+                    <h3>Documentação</h3>
+                    <p>Assistência completa com toda documentação necessária e trâmites legais.</p>
+                    <ul>
+                        <li>• Certidões</li>
+                        <li>• Registros</li>
+                        <li>• Trâmites legais</li>
+                        <li>• Orientação familiar</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section-dark" style="border-radius: 12px; padding: 64px;">
+                <div class="grid grid-2" style="align-items: center;">
+                    <div>
+                        <h3 style="font-size: 2rem; font-weight: 300; margin-bottom: 24px;">
+                            Serviços emergenciais com <br>
+                            <span class="highlight">humanidade e agilidade</span>
+                        </h3>
+                        <p style="opacity: 0.8; margin-bottom: 32px; font-size: 1.1rem;">
+                            Nossa equipe está disponível 24 horas por dia para atender sua família 
+                            com rapidez e cuidado humano em momentos de emergência.
+                        </p>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                            <a href="tel:1199999999" class="btn btn-white">
+                                📞 Ligar agora
+                            </a>
+                            <a href="#contato" class="btn btn-white-outline">
+                                🕐 Emergencial 24h
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="stat-number">24h</div>
+                            <div class="stat-label">Atendimento</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Anos experiência</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Transparência</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Cuidado humano</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="estrutura" class="section section-gray">
+        <div class="container">
+            <div class="text-center mb-64">
+                <h2 class="section-title">
+                    Espaços arquitetônicos para cada momento
+                </h2>
+                <p class="section-subtitle">
+                    Nossa estrutura foi pensada para proporcionar conforto, serenidade e acolhimento 
+                    em todos os detalhes, respeitando suas tradições e necessidades.
+                </p>
+            </div>
+            
+            <div class="about-grid mb-64">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?w=800&h=600&fit=crop" 
+                         alt="Interior da capela - ambiente sereno e acolhedor" class="about-image">
+                </div>
+                
+                <div>
+                    <h3 style="font-size: 2.5rem; font-weight: 300; margin-bottom: 24px;">
+                        Nossa missão é <span class="highlight">acolher com amor</span>
+                    </h3>
+                    
+                    <p style="font-size: 1.1rem; margin-bottom: 32px; opacity: 0.8;">
+                        Cada ambiente foi cuidadosamente planejado para oferecer paz e tranquilidade. 
+                        Nossas instalações proporcionam o ambiente adequado para que famílias possam 
+                        se despedir com dignidade e amor.
+                    </p>
+                    
+                    <ul class="feature-list mb-32">
+                        <li>
+                            <div class="feature-dot"></div>
+                            Ambientes climatizados e confortáveis
+                        </li>
+                        <li>
+                            <div class="feature-dot"></div>
+                            Salas reservadas para famílias
+                        </li>
+                        <li>
+                            <div class="feature-dot"></div>
+                            Capela ecumênica para cerimônias
+                        </li>
+                        <li>
+                            <div class="feature-dot"></div>
+                            Estrutura completa de apoio
+                        </li>
+                    </ul>
+                    
+                    <a href="#contato" class="btn btn-primary">Conhecer nossa estrutura</a>
+                </div>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <svg class="icon" style="margin-bottom: 16px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16,4C18.11,4 20.11,4.89 21.61,6.39C23.11,7.89 24,9.89 24,12A8,8 0 0,1 16,20H6A6,6 0 0,1 0,14C0,10.69 2.69,8 6,8C7.06,8 8.09,8.37 8.92,9C10.04,5.03 13.7,2 18,2C19.37,2 20.63,2.37 21.69,3.05L20.84,4.74C20.12,4.29 19.09,4 18,4C15.04,4 12.55,5.61 11.71,8H16M6,10A4,4 0 0,0 2,14A4,4 0 0,0 6,18H16A6,6 0 0,0 22,12A6,6 0 0,0 16,6H14.26C14.88,5.14 15.95,4 18,4V2C16.76,2 15.62,2.42 14.71,3.14C13.5,1.89 11.83,1 10,1C6.69,1 4,3.69 4,7C4,7.35 4.06,7.69 4.15,8.03C2.86,8.25 1.84,9.18 1.25,10.43L2.84,11.25C3.28,10.44 4.08,10 5,10H6Z"/>
+                    </svg>
+                    <h4 style="font-size: 1.2rem; margin-bottom: 12px;">Salas de velório</h4>
+                    <p>Ambientes acolhedores e reservados para despedidas em família</p>
+                </div>
+                
+                <div class="card">
+                    <svg class="icon" style="margin-bottom: 16px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M5,11L6.5,6.5H17.5L19,11M17.5,16A1.5,1.5 0 0,1 16,14.5A1.5,1.5 0 0,1 17.5,13A1.5,1.5 0 0,1 19,14.5A1.5,1.5 0 0,1 17.5,16M6.5,16A1.5,1.5 0 0,1 5,14.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 8,14.5A1.5,1.5 0 0,1 6.5,16M18.92,6C18.72,5.42 18.16,5 17.5,5H6.5C5.84,5 5.28,5.42 5.08,6L3,12V20A1,1 0 0,0 4,21H5A1,1 0 0,0 6,20V19H18V20A1,1 0 0,0 19,21H20A1,1 0 0,0 21,20V12L18.92,6Z"/>
+                    </svg>
+                    <h4 style="font-size: 1.2rem; margin-bottom: 12px;">Estacionamento</h4>
+                    <p>Vagas amplas e seguras para acomodar familiares e convidados</p>
+                </div>
+                
+                <div class="card">
+                    <svg class="icon" style="margin-bottom: 16px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.5 16,12.1 16,12.7V16.2C16,16.8 15.4,17.3 14.8,17.3H9.2C8.6,17.3 8,16.8 8,16.2V12.7C8,12.1 8.6,11.5 9.2,11.5V10C9.2,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.5,8.9 10.5,9.7V11.5H13.5V9.7C13.5,8.9 12.8,8.2 12,8.2Z"/>
+                    </svg>
+                    <h4 style="font-size: 1.2rem; margin-bottom: 12px;">Segurança 24h</h4>
+                    <p>Monitoramento constante para tranquilidade da família</p>
+                </div>
+                
+                <div class="card">
+                    <svg class="icon" style="margin-bottom: 16px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,18C8.69,18 6,15.31 6,12S8.69,6 12,6A6,6 0 0,1 18,12C18,15.31 15.31,18 12,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                    </svg>
+                    <h4 style="font-size: 1.2rem; margin-bottom: 12px;">Ornamentação</h4>
+                    <p>Decoração floral e ornamentos adequados para cada cerimônia</p>
+                </div>
+                
+                <div class="card">
+                    <svg class="icon" style="margin-bottom: 16px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z"/>
+                    </svg>
+                    <h4 style="font-size: 1.2rem; margin-bottom: 12px;">Som ambiente</h4>
+                    <p>Sistema de áudio para músicas e cerimônias religiosas</p>
+                </div>
+                
+                <div class="card">
+                    <svg class="icon" style="margin-bottom: 16px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22S19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                    </svg>
+                    <h4 style="font-size: 1.2rem; margin-bottom: 12px;">Localização central</h4>
+                    <p>Fácil acesso para familiares vindos de diferentes regiões</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="section">
+        <div class="container">
+            <div class="text-center mb-64">
+                <h2 class="section-title">
+                    Precisa de ajuda agora?
+                </h2>
+                <p class="section-subtitle">
+                    Nossa equipe está pronta para atender sua família com cuidado e dedicação.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div>
+                    <h3 style="font-size: 2rem; font-weight: 300; margin-bottom: 32px;">
+                        Entre em contato
+                    </h3>
+                    
+                    <div class="contact-info">
+                        <div class="contact-card primary">
+                            <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                            </svg>
+                            <div>
+                                <div style="font-weight: 600;">Emergencial 24 horas</div>
+                                <div style="opacity: 0.8;">(11) 99999-9999</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                            </svg>
+                            <div>
+                                <div style="font-weight: 600;">E-mail</div>
+                                <div style="opacity: 0.8;">contato@funerariamaranata.com.br</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22S19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <div style="font-weight: 600;">Endereço</div>
+                                <div style="opacity: 0.8;">Rua das Flores, 123 - Centro, São Paulo - SP</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                            </svg>
+                            <div>
+                                <div style="font-weight: 600;">Horário de atendimento</div>
+                                <div style="opacity: 0.8;">24 horas por dia, 7 dias por semana</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="emergency-card">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 12px;">Emergências</h4>
+                        <p style="opacity: 0.8; margin-bottom: 24px;">
+                            Para emergências, nossa equipe está disponível 24 horas por dia. 
+                            Ligue para nossa central de atendimento.
+                        </p>
+                        <a href="tel:1199999999" class="btn btn-white" style="width: 100%;">
+                            📞 Ligar para emergência
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="form">
+                    <h3 style="font-size: 2rem; font-weight: 300; margin-bottom: 32px;">
+                        Deixe sua mensagem
+                    </h3>
+                    
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nome completo</label>
+                                <input type="text" placeholder="Seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label>Telefone</label>
+                                <input type="tel" placeholder="(11) 99999-9999">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="email" placeholder="seu@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Como podemos ajudar?</label>
+                            <textarea placeholder="Descreva sua necessidade ou dúvida..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Enviar mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px;">Funerária Maranata</div>
+                    <p style="opacity: 0.8; margin-bottom: 32px; line-height: 1.6;">
+                        Cuidamos com amor e dedicação de cada família em momentos delicados. 
+                        Nossa missão é oferecer acolhimento, estrutura e empatia quando você mais precisa.
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 8px; opacity: 0.6;">
+                        <svg style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span style="font-size: 0.9rem;">Feito com amor e cuidado</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li>Cerimônias e Velórios</li>
+                        <li>Cremação</li>
+                        <li>Traslado Nacional</li>
+                        <li>Traslado Internacional</li>
+                        <li>Documentação</li>
+                        <li>Emergencial 24h</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4>Contato</h4>
+                    <div style="opacity: 0.8;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <svg style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                            </svg>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <svg style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                            </svg>
+                            <span>contato@funerariamaranata.com.br</span>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: 12px;">
+                            <svg style="width: 16px; height: 16px; margin-top: 4px;" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22S19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                            </svg>
+                            <span>Rua das Flores, 123<br>Centro, São Paulo - SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div>© 2024 Funerária Maranata. Todos os direitos reservados.</div>
+                <div>Atendimento 24 horas por dia, 7 dias por semana</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Obrigado pela sua mensagem! Nossa equipe entrará em contato em breve.');
+        });
+
+        // Mobile menu toggle (if needed)
+        function toggleMobileMenu() {
+            // Add mobile menu functionality here if needed
+        }
+    </script>
+</body>
+</html>
