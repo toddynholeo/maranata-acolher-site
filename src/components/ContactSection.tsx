@@ -6,7 +6,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contato" className="py-20 bg-background">
+    <section id="contato" className="py-20 bg-soft-gray">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-light text-foreground mb-4">
@@ -24,12 +24,12 @@ const ContactSection = () => {
             </h3>
             
             <div className="space-y-6 mb-8">
-              <Card className="p-4 bg-soft-blue border-border/50">
+              <Card className="p-4 bg-dark-charcoal text-white border-dark-charcoal">
                 <div className="flex items-center gap-4">
                   <Phone className="w-6 h-6 text-primary" />
                   <div>
-                    <div className="font-semibold text-foreground">Emergencial 24 horas</div>
-                    <div className="text-muted-foreground">(11) 99999-9999</div>
+                    <div className="font-semibold text-white">Emergencial 24 horas</div>
+                    <div className="text-white/80">(11) 99999-9999</div>
                   </div>
                 </div>
               </Card>
@@ -65,13 +65,13 @@ const ContactSection = () => {
               </Card>
             </div>
             
-            <div className="bg-gentle-lavender rounded-lg p-6">
-              <h4 className="text-lg font-semibold text-foreground mb-2">Emergências</h4>
-              <p className="text-muted-foreground mb-4">
+            <div className="bg-dark-charcoal text-white rounded-lg p-6">
+              <h4 className="text-lg font-semibold text-white mb-2">Emergências</h4>
+              <p className="text-white/80 mb-4">
                 Para emergências, nossa equipe está disponível 24 horas por dia. 
                 Ligue para nossa central de atendimento.
               </p>
-              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button className="w-full bg-white text-dark-charcoal hover:bg-white/90">
                 <Phone className="w-4 h-4 mr-2" />
                 Ligar para emergência
               </Button>

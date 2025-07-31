@@ -4,7 +4,7 @@ import natureImage from "@/assets/nature-peaceful.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-20 bg-soft-green">
+    <section id="sobre" className="py-20 bg-soft-gray">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
